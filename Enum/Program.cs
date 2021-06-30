@@ -64,6 +64,12 @@ namespace Enum
                 //throw new InvalidEnumArgumentException("ShippingMethod", method5, typeof(ShippingMethod));
             }
 
+            //Prints:
+            //"RegularAirMail,
+            //RegisterAirMail
+            //Express"
+            foreach (int i in System.Enum.GetValues(typeof(ShippingMethod)))
+                Console.WriteLine((ShippingMethod)i);
         }
             
             
